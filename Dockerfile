@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install -y \
 # Ishchi papka
 WORKDIR /app
 
-# Barcha fayllarni konteynerga yuklaymiz
+# Reponi konteynerga yuklaymiz
 COPY . /app
 
-# 24/7 ishlashi uchun
+# Botni ishga tushirish
 CMD ["php", "bot.php"]
